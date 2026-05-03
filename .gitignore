@@ -1,0 +1,7 @@
+.esphome/
+.pio/
+.pioenvs/
+*.bin
+*.factory.bin
+*.ota.bin
+secrets.yaml
