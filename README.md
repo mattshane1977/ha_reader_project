@@ -41,20 +41,19 @@ This project implements a high-performance RFID/NFC reader using an ESP32-S3 (16
    git clone https://github.com/mattshane1977/ha_reader_project.git
    cd ha_reader_project
    ```
-2. Update the `wifi` section in `reader-test.yaml` with your credentials.
+2. Update the `wifi` section in `ha_reader.yaml` with your credentials.
 3. Flash via USB (recommended for first time):
    ```bash
-   esphome run reader-test.yaml --device COM11
+   esphome run ha_reader.yaml --device COM11
    ```
    *(Replace `COM11` with your actual serial port)*
 
 4. For future updates, OTA is enabled:
    ```bash
-   esphome run reader-test.yaml --device 10.10.15.139
+   esphome run ha_reader.yaml --device 10.10.15.139
    ```
 
 ## Repository Contents
-- `reader-test.yaml`: Primary ESPHome configuration.
-- `esp32-s3-fixed.yaml`: Troubleshooting configuration for Octal PSRAM.
+- `ha_reader.yaml`: Primary ESPHome configuration.
 - `main.py`: MicroPython script for quick hardware validation.
 - `read_serial.py`: Debugging script to capture boot logs.
